@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
     }
+
     public static void task1() {
         //task 1
         int[] firstArray = new int[3];
@@ -25,9 +26,38 @@ public class Main {
         System.out.println(Arrays.toString(thirdArray));
 
         //task 3
-        System.out.println(firstArray[2] + ", " + firstArray[1] + ", " + firstArray[0]);
-        System.out.println(secondArray[2] + ", " + secondArray[1] + ", " + secondArray[0]);
-        System.out.println(thirdArray[2] + ", " + thirdArray[1] + ", " + thirdArray[0]);
+        for (int i = 2; i != -1; i--) {
+            if (i < 3 && i > -1) {
+                System.out.print(firstArray[i]);
+            }
+            if (i < 3 && i > 0) {
+                System.out.print(",");
+            } else {
+                System.out.println(" ");
+            }
+
+        }
+        for (int i = 2; i != -1; i--) {
+            if (i < 3 && i > -1) {
+                System.out.print(secondArray[i]);
+            }
+            if (i < 3 && i > 0) {
+                System.out.print(",");
+            } else {
+                System.out.println(" ");
+            }
+
+        }
+        for (int i = 2; i != -1; i--) {
+            if (i < 3 && i > -1) {
+                System.out.print(thirdArray[i]);
+            }
+            if (i < 3 && i > 0) {
+                System.out.print(",");
+            } else {
+                System.out.println(" ");
+            }
+        }
 
         //task 4
         for (int i = 0; i < 3; i++) {
@@ -38,5 +68,12 @@ public class Main {
         System.out.println(Arrays.toString(firstArray));
     }
 }
+
+
+
+
+
+
+
 
 
